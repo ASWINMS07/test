@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Link Life</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fc;
+            color: #333;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ef2c2c;
+            padding: 15px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .navbar .logo h2 {
+            color: #fff;
+            margin: 0;
+            font-size: 24px;
+        }
+        .navbar nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .navbar nav ul li {
+            margin: 0 15px;
+        }
+        .navbar nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+            font-size: 16px;
+        }
+        .navbar nav ul li a:hover {
+            color: #ffd700;
+        }
+        .contact-section {
+            max-width: 600px;
+            margin: 60px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .contact-section h2 {
+            color: #ef2c2c;
+            margin-bottom: 10px;
+        }
+        .contact-section p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .contact-form label {
+            display: block;
+            text-align: left;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #555;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        .contact-form input:focus, .contact-form textarea:focus {
+            border-color: #ef2c2c;
+            outline: none;
+            box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+        }
+        .contact-form button {
+            display: block;
+            width: 100%;
+            background:#ef2c2c;
+            color: #fff;
+            border: none;
+            padding: 12px;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        .contact-form button:hover {
+            background:#ef2c2c;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #ef2c2c;
+            color: #fff;
+            margin-top: 50px;
+            font-size: 14px;
+        }
+        .social-media a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .social-media a:hover {
+            color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h2>Link Life</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="my  activity 1.html">HOME</a></li>
+                    <li><a href="about us 1.html">ABOUT US</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="features.html">FEATURES</a></li>
+                    <li><a href="contact-us.html">CONTACT US</a></li>
+                    <li><a href="signup.html">LOGIN</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, please reach out to us using the form below.</p>
+            <form action="submit_form.php" method="POST" class="contact-form">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">FACEBOOK</a>
+            <a href="https://www.instagram.com" target="_blank">INSTAGRAM</a>
+        </div>
+        <p>&copy; 2024 - 2025, All Rights Reserved. Designed by linklife.org</p>
+    </footer>
+</body>
+</html>

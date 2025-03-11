@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - LINK LIFE</title>
+    <script defer src="script1.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: url('https://source.unsplash.com/1600x900/?hospital,blood-donation') no-repeat center center/cover;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: rgba(220, 53, 69, 0.9);
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        .main-container {
+            display: flex;
+            flex: 1;
+            margin-top: 70px;
+            padding-bottom: 60px;
+        }
+
+        .sidebar {
+            width: 250px;
+            background: rgba(52, 58, 64, 0.8);
+            color: white;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 70px;
+            backdrop-filter: blur(10px);
+            border-right: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            padding: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            transition: background 0.3s;
+        }
+
+        .sidebar ul li:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        .content {
+            margin-left: 270px;
+            padding: 40px;
+            flex-grow: 1;
+        }
+
+        .content-section {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+            backdrop-filter: blur(5px);
+        }
+
+        .content-section:hover {
+            transform: scale(1.02);
+        }
+
+        .content-section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 15px auto;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: rgba(52, 58, 64, 0.9);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            border-top: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        footer a:hover {
+            color: #ffd700;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+                padding-top: 10px;
+            }
+            .content {
+                margin-left: 0;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="LINK LIFE" width="150" height="50">
+        <nav>
+            <a href="new my activity.html">Home</a>
+            <a href="https://forms.gle/AC44TkUyJns69KxX9">FAQs</a>
+            <a href="https://forms.gle/bBAj8JhpzoFJAFPQ8">Feedback</a>
+            <a href="contact-us.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="javascript:void(0);" onclick="showSection('about')">About Us</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('vision')">Vision & Mission</a></li>
+            </ul>
+        </aside>
+
+        <div class="content">
+            <section id="about" class="content-section active">
+                <h1 style="color: #dc3545;">About Us</h1>
+                <img src="https://friends2support.org/imgs/blood_3.jpg">
+                <ul>
+                    <li><strong>"LINK LIFE" Foundation</strong></li>
+                    <li>Founded in 2024 to connect voluntary blood donors with those in need.</li>
+                    <li>Aims to provide timely support and raise awareness about blood donation.</li>
+                </ul>
+            </section>
+
+            <section id="vision" class="content-section" style="display: none;">
+                <h2 style="color: #dc3545;">Our Vision</h2>
+                <img src="https://friends2support.org/imgs/blood_1.jpg">
+                <ul>
+                    <li><strong>"Safer and Better Tomorrow"</strong></li>
+                    <li>Ensuring easy access to blood donors through digital platforms.</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <a href="forgotPassword.html">Forgot Password?</a>
+            <a href="inviteFriends.html">Invite Friends</a>
+            <a href="https://myaccount.google.com/people-and-sharing">Post Blood Request</a>
+            <a href="contact-us.html">Contact Us</a>
+        </div>
+        <p>&copy; 2024 - 2025, All Rights Reserved. Designed by linklife.org</p>
+    </footer>
+
+</body>
+</html>
